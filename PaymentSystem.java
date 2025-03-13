@@ -8,7 +8,6 @@ class CreditCardPayment implements PaymentGateway {
     @Override
     public void processPayment(double amount) {
         System.out.println("Processing credit card payment of $" + amount);
-        // Credit card payment logic
     }
 }
 class PayPalPayment implements PaymentGateway {
@@ -62,8 +61,6 @@ public class PaymentSystem {
 
         payment.processPayment(amount);
         System.out.println("Payment successful!");
-
-        scanner.close();
     }
 }
 
